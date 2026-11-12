@@ -1,0 +1,8 @@
+{
+    "policy_groups": [
+        "webview",
+        "audio",
+        "keep-display-on"
+    ],
+    "policy_version": "@APPARMOR_POLICY@"
+}

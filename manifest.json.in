@@ -1,0 +1,15 @@
+{
+    "name": "sweetpop.sweetpopteam",
+    "title": "Sweet Pop",
+    "version": "1.0.0",
+    "description": "Offline candy match-3 puzzle with 120 levels",
+    "framework": "@CLICK_FRAMEWORK@",
+    "architecture": "@CLICK_ARCH@",
+    "maintainer": "Sweet Pop Team <sweetpop@users.noreply.github.com>",
+    "hooks": {
+        "sweetpop": {
+            "apparmor": "sweetpop.apparmor",
+            "desktop": "sweetpop.desktop"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Sweet Pop
+Name[ar]=سويت بوب
+Comment=Offline match-3 candy puzzle
+Exec=qmlscene $@ qml/Main.qml
+Icon=assets/icon.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+X-Ubuntu-Supported-Orientations=portrait

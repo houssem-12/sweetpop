@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Sweet Pop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="fx"></canvas>
+
+  <section id="home" class="screen">
+    <div id="floaters"></div>
+    <div class="home-inner">
+      <h1 class="logo"><span>Sweet</span><span>Pop</span></h1>
+      <p id="tagline" class="tagline"></p>
+      <button id="btnPlay" class="btn big" data-act="play"></button>
+      <button id="btnLevels" class="btn" data-act="map"></button>
+      <button id="btnSettings" class="btn ghost" data-act="settings"></button>
+    </div>
+  </section>
+
+  <section id="map" class="screen hidden">
+    <div class="bar">
+      <button class="round" data-act="home" aria-label="home">&#8962;</button>
+      <div id="mapTitle" class="bar-title"></div>
+      <button class="round" data-act="settings" aria-label="settings">&#9881;</button>
+    </div>
+    <div id="mapList" class="scroll"></div>
+  </section>
+
+  <section id="game" class="screen hidden">
+    <div class="hud">
+      <div class="bar">
+        <button class="round" data-act="pause" aria-label="pause">&#10073;&#10073;</button>
+        <div id="levelTitle" class="bar-title"></div>
+        <button class="round" id="btnMute" data-act="mute" aria-label="sound">&#9835;</button>
+      </div>
+      <div class="stats">
+        <div class="stat score"><span id="lblScore"></span><b id="score">0</b></div>
+        <div class="stat moves" id="movesBox"><span id="lblMoves"></span><b id="moves">0</b></div>
+      </div>
+      <div id="goals"></div>
+      <div id="bar"><div id="barFill"></div><div id="markers"></div></div>
+    </div>
+    <div id="boardWrap"><canvas id="board"></canvas></div>
+    <div class="dock"><button class="pill" id="btnHint" data-act="hint"><span>&#128161;</span><b id="lblHint"></b></button></div>
+  </section>
+
+  <div id="modal" class="hidden"></div>
+  <div id="toast"></div>
+</div>
+
+<script src="js/core.js"></script>
+<script src="js/levels.js"></script>
+<script src="js/levels-data.js"></script>
+<script src="js/draw.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
